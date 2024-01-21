@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style >
+        .a{
+            width: 300px;
+            height: 350px;
+            background-color: grey;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        i{
+            font-size: 40px;
+            padding: 7px;
+        }
+        span{
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        <img src="pexels-efrem-efre-18271867.jpg" alt="">
+<i class="fa-solid fa-thumbs-up" onclick="test()" id="b"></i><span id="f">0</span>
+<i class="fa-solid fa-thumbs-down" onclick="test1()" id="c"></i><span id="g">0</span>
+<i class="fa-solid fa-comment" onclick="test2()" id="d"></i><span id="h">0</span>
+<i class="fa-solid fa-share" onclick="test3()"id="e"></i><span id="i">0</span>
+    </div>
+    <script>
+        function test(){
+            let a=document.getElementById("b");
+            document.getElementById("f").innerHTML=1
+            a.style.color="blue"
+            let b=document.getElementById("c");
+            document.getElementById("g").innerHTML=0
+            b.style.color="black";
+            let c=document.getElementById("d");
+            document.getElementById("h").innerHTML=0
+            c.style.color="black"
+            let d=document.getElementById("e");
+            document.getElementById("i").innerHTML=0
+            d.style.color="black"
+        } function test1(){
+            let b=document.getElementById("c");
+            document.getElementById("g").innerHTML=1
+            b.style.color="red";
+            let a=document.getElementById("b");
+            document.getElementById("f").innerHTML=0
+            a.style.color="black"
+            let c=document.getElementById("d");
+            document.getElementById("h").innerHTML=0
+            c.style.color="black"
+            let d=document.getElementById("e");
+            document.getElementById("i").innerHTML=0
+            d.style.color="black"
+        } function test2(){
+            let c=document.getElementById("d");
+            document.getElementById("h").innerHTML=1
+            c.style.color="white";
+            let a=document.getElementById("b");
+            document.getElementById("f").innerHTML=0
+            a.style.color="black"
+            let b=document.getElementById("c");
+            document.getElementById("g").innerHTML=0
+            b.style.color="black";
+            let e= prompt("Enter your comment");
+            console.log(e)
+            let d=document.getElementById("e");
+            document.getElementById("i").innerHTML=0
+            d.style.color="black"
+        } function test3(){
+            let d=document.getElementById("e");
+            document.getElementById("i").innerHTML=1
+            d.style.color="green"
+            let a=document.getElementById("b");
+            document.getElementById("f").innerHTML=0
+            a.style.color="black"
+            let b=document.getElementById("c");
+            document.getElementById("g").innerHTML=0
+            b.style.color="black";
+           
+            let c=document.getElementById("d");
+            document.getElementById("h").innerHTML=0
+            c.style.color="black"
+        }
+    </script>
+</body>
+</html>

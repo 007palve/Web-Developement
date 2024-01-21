@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form{
+        border: double black;
+        background-color: orange;
+        width: 600px;
+        padding: 10px;
+    }
+    div{
+        background-color: aqua;
+        border: 2px solid black;
+        text-align: center;
+    }
+    </style>
+
+</head>
+<body>
+    <form action="">
+     <div>   <label for="">Student Registrtion form </label></div>
+        <br><br>
+        <label for="">Fill in this form to register</label>
+        <br><br>
+        <label for="g" >First Name</label>
+        <input id="g" name="fnamw" type="text" placeholder="Enter your first Name" required>
+        <br><br>
+        <label for="b">Last Name</label>
+        <input id="b" name="lastname" type="text" placeholder="Enter your last Name" required readonly disabled>
+        <br><br>
+        <label for="c">Email</label>
+        <input id="c" type="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="d">DOB</label>
+        <input id="d" type="date" name="dob" placeholder="Enter your DOB" required>
+        <br><br>
+        <label for="e">Set Username</label>
+        <input id="e" name="Username" type="text" placeholder="set Username" required>
+        <br><br>
+        <label for="f">set password</label>
+        <input  id="f" name="password" type="password" placeholder="Set password" required>
+        <br><br>
+        <label for="">Gender</label><br>
+        <input type="radio" name="Gender" value="male">male <br>
+        <input type="radio" name="Gender" value="female">female <br>
+        <input type="radio" name="Gender" value="other">other
+        <br><br>
+        course <input list="a">
+       
+        <datalist id="a">
+            <option value="html"></option>
+            <option value="cssl"></option>
+
+            <option value="js"></option>
+
+            <option value="reactjs"></option>
+
+        </datalist>
+        <br><br>
+        <input type="image" src="submit.jpg" height="100px" width="100px">
+
+        
+    </form>
+</body>
+</html>

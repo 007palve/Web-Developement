@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //methos of array
+        //1.push() //it add new element at the end
+        let a=["html","css","js"]
+        a.push("reactjs");
+        console.log(a);
+        //2.pop() //it remove last element
+        let b=['html','css','js'];
+        b.pop();
+        console.log(b);
+        //3.unshift //it add new element at the begining
+        let c=["html",'css'];
+        c.unshift("js");
+        console.log(c);
+        //4.shift() ..it remove first element
+        let d=["html",'css'];
+        d.shift();
+        console.log(d);
+        //5.splice(start,length start from deleted string) 
+        let e=["html","css","js"];
+        let f=e.splice(0,2) 
+        console.log(f);
+        //6.slice(start,length from start)
+        let g=["html","css","js"];
+        let h=g.slice(1,2);
+        console.log(h)
+        //7. indexof() it used to know the positon of length in a string
+         let i=["html","css","js"];
+         let j=i.indexOf("css");
+         console.log(j)
+       //8.split() this method is used to convert string to array
+       let k="this is a text";
+       let l=k.split( " ")
+       console.log(l)
+       //9.join()- it is used to write a array into string
+       let m=["thml","css","js"];
+       let n=m.join(" ");
+       console.log(n)
+   //10.concat //it is used to merge array
+   let o=["html","css"]
+   let p=["js","reactjs"];
+   let arr=o.concat(p);
+   console.log(arr)
+   //11.tostring //it is used to conver a string into array
+   let q=["html","css","js"];
+   let r=q.toString();
+   console.log(r)
+   //12.Multidimensional array //it is used to define array into another array
+   let s=[
+    ["html","css","js"],
+    ["html","css","js"],
+    ["html","css","js"],
+
+   ]
+   console.log(s[0][1])
+  </script>
+</body>
+</html>

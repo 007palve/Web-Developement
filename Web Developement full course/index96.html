@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+        .a{
+            background-color: rgb(16, 193, 193);
+            width: 100%;
+            height: 500px;
+            position: relative;
+        }
+        .b{
+            display: flex;
+            justify-content: space-around;
+        }
+        .c {
+            display: flex;
+        }
+        .c li{
+            
+            margin: 20px;
+            list-style-type: none;
+        }
+        .c a{
+            color: white;
+       
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .c a:hover{
+           color: rgb(255, 0, 0);
+        }
+        .d{
+            width: 40%;
+            height: 200px;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+
+        }
+        .e{
+            position: absolute;
+            top: 180px;
+            left: 65%;
+        }
+        .f{
+            width: 100%;
+            height: 400px;
+        }
+        .item{
+            width: 250px;
+            height: 200px;
+            background-color: rgb(177, 46, 46);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .f{
+            display: flex;
+            /* margin: 20px; */
+           
+        }
+        .h{
+            width: 100%;
+            height: 1300px;
+            position: relative;
+        }
+        .i{
+            position: absolute;
+            top: 50px;
+            left: 30%;
+        }
+        .j{
+            width: 40%;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            left: 40%;
+        }.k{
+            position: absolute;
+            top: 250px;
+            left: 30%;
+        }
+        .l{
+            width: 40%;
+            height: 50px;
+            position: absolute;
+            top: 250px;
+            left: 40%;
+        }
+        .m{
+            position: absolute;
+            top: 450px;
+            left: 32%;
+        }
+        .n{
+            width: 40%;
+            height: 50px;
+            position: absolute;
+            top: 450px;
+            left: 40%;
+        } .o{
+            position: absolute;
+            top: 670px;
+            left: 29%;
+        }
+        .p{
+            width: 40%;
+            height: 50px;
+            position: absolute;
+            top: 650px;
+            left: 40%;
+        }.q{
+            position: absolute;
+            top: 850px;
+            left: 29%;
+        }
+        .r{
+            width: 40%;
+            height: 50px;
+            position: absolute;
+            top: 850px;
+            left: 40%;
+        }
+        .s{
+            position: absolute;
+            top: 1050px;
+            left: 29%;
+        }
+        .t{
+            width: 40%;
+            height: 50px;
+            position: absolute;
+            top: 1050px;
+            left: 40%;
+        }
+        .h::after{
+            content: "";
+            width: 70%;
+            height: 1px;
+            background-color: black;
+            position: absolute;
+            top: 1250px;
+            left: 18%;
+
+        }
+        .x{
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+        .x p{
+            width: 50%;
+            height: 100px;
+            color: aqua;
+            text-align: center;
+            font-size: 25px;
+          position: absolute;
+          left: 25%;
+        }
+        .x h2{
+            position: absolute;
+            left: 35%;
+            top: 200px;
+            
+
+        }
+        .y{
+            width: 100%;
+            height: 100px;
+            background-color: grey;
+        }
+        .y  i{
+           color: aqua;
+        }
+        .y h1{
+            text-align: center;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+         <div class="b">
+            <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">owl.carousel.js</h1>
+            <ul class="c">
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">docs</a></li>
+                <li><a href="">download</a></li>
+            </ul>
+            <div class="d">
+                <h1>Owl Carousel 2</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit totam cum nihil quo. Obcaecati, consequuntur provident laborum dicta eveniet soluta iure distinctio sit architecto fugit nemo eum voluptatem, ex tempore!</p>
+                <button onclick="alert('succesfully download')">Download</button>
+                <button onclick="alert('github')">Github</button>
+                
+              </div>
+              <div class="e">
+                <img src="https://owlcarousel2.github.io/OwlCarousel2/assets/img/owl-logo.png" alt="">
+              </div>
+         </div>
+        
+    </div>
+    <h2 style="text-align: center;">Demo</h2>
+
+    <div class="owl-carousel owl-theme">
+        <br>
+        <div class="item"><span style="color: white; font-size: 25px;">swipe</span></div>
+        <div class="item"><span style="color: white; font-size: 25px;">Drag</div>
+        <div class="item"><span style="color: white; font-size: 25px;">Responsive</div>
+        <div class="item"><span style="color: white; font-size: 25px;">css3</div>
+        <div class="item"><span style="color: white; font-size: 25px;">Fast</div>
+        <div class="item"><span style="color: white; font-size: 25px;">easy</div>
+        <div class="item"><span style="color: white; font-size: 25px;">free</div>
+        <div class="item"><span style="color: white; font-size: 25px;">upgradbale</div>
+        <div class="item"><span style="color: white; font-size: 25px;">Tons of options</div>
+            </div>
+        
+           <div class="h">
+            <div class="i">
+            <img src="https://owlcarousel2.github.io/OwlCarousel2/assets/img/feature-options.png" alt=""> </div>
+            <div class="j">
+            <h1>Fully Customisable
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dignissimos fugiat cum vel odit temporibus ab nisi debitis distinctio illum. Totam aliquid sunt ipsum minus aperiam facilis voluptatum cupiditate eligendi?</p>
+        </div>   
+        <div class="k">
+            <img src="https://owlcarousel2.github.io/OwlCarousel2/assets/img/feature-drag.png" alt=""> </div>
+            <div class="l">
+            <h1>Touch and Drag Support
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dignissimos fugiat cum vel odit temporibus ab nisi debitis distinctio illum. Totam aliquid sunt ipsum minus aperiam facilis voluptatum cupiditate eligendi?</p>
+        </div> <div class="m">
+            <img src="https://owlcarousel2.github.io/OwlCarousel2/assets/img/feature-responsive.png" alt=""> </div>
+            <div class="n">
+            <h1>Fully Responsive
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dignissimos fugiat cum vel odit temporibus ab nisi debitis distinctio illum. Totam aliquid sunt ipsum minus aperiam facilis voluptatum cupiditate eligendi?</p>
+        </div> 
+        <div class="o">
+            <img src="https://owlcarousel2.github.io/OwlCarousel2/assets/img/feature-modern.png" alt=""> </div>
+            <div class="p">
+            <h1>Mordern Browsers
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dignissimos fugiat cum vel odit temporibus ab nisi debitis distinctio illum. Totam aliquid sunt ipsum minus aperiam facilis voluptatum cupiditate eligendi?</p>
+        </div> <div class="q">
+            <img src="https://owlcarousel2.github.io/OwlCarousel2/assets/img/feature-zombie.png" alt=""> </div>
+            <div class="r">
+            <h1>Zombie Browsers
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dignissimos fugiat cum vel odit temporibus ab nisi debitis distinctio illum. Totam aliquid sunt ipsum minus aperiam facilis voluptatum cupiditate eligendi?</p>
+        </div> <div class="s">
+            <img src="https://owlcarousel2.github.io/OwlCarousel2/assets/img/feature-module.png" alt=""> </div>
+            <div class="t">
+            <h1>Modules and plugin
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dignissimos fugiat cum vel odit temporibus ab nisi debitis distinctio illum. Totam aliquid sunt ipsum minus aperiam facilis voluptatum cupiditate eligendi?</p>
+        </div> 
+        </div> 
+        <div class="x">
+            <p>Owl Carousel has been choosen as number one jQuery plugin by hundreds of developers. Now its time for a new version that comes with lots of new features and even more user friendly API.</p>
+            <h2>Watch this space- we'll be launching soon :)</h2>
+        </div>
+        <div class="y">
+            <h1>Prathamesh Palve <i class="fa-brands fa-twitter"></i></h1>
+        </div>
+    <script>
+       var owl = $('.owl-carousel');
+owl.owlCarousel({
+    // loop:true,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+       
+    },
+    1000:{
+   items:5
+    }
+    }
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+    </script>
+</body>
+</html>

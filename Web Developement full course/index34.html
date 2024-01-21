@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: red;
+            height: 300px;
+            width: 400px;
+            text-decoration: underline;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        .parent:hover{
+            background-color: aqua;
+        }
+        a{
+            font-size: 50px;
+        }
+        a:visited{
+          
+            color: red;
+
+        }
+        a:active{
+            color: rgb(136, 226, 0);
+        }
+        a:link{
+            color: rgb(172, 32, 218);
+        }
+        input{
+            border: 2px solid blue;
+            
+        }
+        input:hover{
+            background-color: aqua;
+        }
+        input::placeholder{
+            color: red;
+        }
+        h1{
+            text-align: center;
+        }
+        h1::after{
+            content: "";
+            display: block;
+            width: 10%;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            left: 45%;
+            
+        }
+        h1::before{
+            content: "";
+            display: block;
+            width: 10%;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h2>hello world</h2>
+    
+    </div>
+    <a href="https://google.com">Google</a>
+    <a href="https://google.comss">youtube</a>
+    <br>
+    <input type="text" placeholder="Enter your Name">
+    <h1>Hello</h1>
+
+</body>
+</html>

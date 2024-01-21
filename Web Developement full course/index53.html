@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .a{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .a ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .a li{
+    padding: 10px 20px;
+    }
+    .a a{
+        text-decoration: none;
+        color: wheat;
+        font-size: 20px;
+    }
+    .b{
+        height: 500px;
+        width: 100%;
+
+        
+      
+    }
+    .C{
+        height: 500px;
+    width: 100%;
+    position: relative;
+    }
+    .c img{
+    height: 500px;
+    width: 100%;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  
+    }
+    @keyframes test {
+        100%{
+            transform: scale(0.5,0.5);
+        }
+    }
+.d{
+    height: 300px;
+    width: 40%;
+    background-color: rgba(128, 128, 128, 0.669);
+    position: absolute;
+    top: 200PX;
+    left: 50PX;
+}
+.e{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 10px;
+}
+.f{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+   
+  margin-top: -10PX;
+    margin-left: 20px;
+}.g{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+   
+    margin-top: -10PX;
+  
+    margin-left: 40px;
+
+}
+.h{
+    height: 350px;
+    width: 100%;
+position: relative;
+}
+.i h1::after{
+    content: "";
+    height: 5px;
+    width: 40px;
+    border-radius: 40%;
+   background-color: red;
+   display: block;
+   position: absolute;
+   left: 50%;
+   top: 50px ;
+
+}.k{
+    height: 200px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+.j{
+    height: 200px;
+    width: 30%;
+    background-color: blue;
+    color: wheat;
+    text-align: center;
+    
+
+}
+.l{
+    width: 100%;
+    height: 300px;
+    position: relative; 
+    border: 10px solid black;
+    
+    
+    }
+    .m img{
+        width: 100%;
+        height: 300px;
+
+    }
+    .n{
+        width: 30%;
+        height: 200px;
+        background-color: rgba(0, 255, 255, 0.326);
+        position: absolute;
+        top: 50px;
+        left: 500px;
+        text-align:  center;
+    }
+    .o{
+        width: 100%;
+        height: 500px;
+    }
+    .p h1{
+        position: relative;
+    }
+    .p h1::after {
+        content: "";
+    height: 5px;
+    width: 40px;
+    border-radius: 40%;
+  background-color: black;
+   display: block;
+   position: absolute;
+   left: 48%;
+   top: 50px ;
+    }
+    .q{
+        width: 100%;
+     display: grid;
+     grid-template-columns: 30% 30% 30%;
+   
+        height: 500px;
+    }
+    .r{
+        width: 100%;
+        height: 200px;
+        padding: 100px;
+        text-align: center;
+     
+        
+    
+    }
+    .r img{
+        width: 100%;
+        height: 200px;
+        animation-name: a;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes a {
+    100%{
+        transform:scaleX(0.5);
+    }
+        
+    }
+
+   .services{
+    position: relative;
+   }
+   .dropdown {
+    position: absolute;
+    top: 30px;
+    
+   }
+   .dropdown a{
+    display: none;
+   }
+   .services:hover .dropdown a{
+    display: block;
+   }
+   label{
+    display: none;
+   }
+   input{
+    display: none;
+   }
+  @media (max-width:600px){
+    label{
+        display: block;
+    }
+    input{
+        display: block;
+    }
+    input:checked ~ .a ul{
+        position: absolute;
+    top: 30px;
+    background-color: black;
+    left: 0; display: block;
+    }
+    .dropdown a{
+    left: 60%;
+}
+  }
+</style>
+</head>
+<body>
+    <div class="a">
+        <h1  ><i class="fa-solid fa-glasses"></i> F<span style="color: red;">a</span>mms</h1>
+    <nav>
+     <ul>
+        <input type="checkbox" id="same">
+        <label for="same"><i class="fa-solid fa-bars" st></i></label>
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">products</a></li>
+        <li class="services"><a href="">services</a>
+        <ul class="dropdown">
+            <li><a href="">Designer</a></li>
+            <li><a href="">Developer</a></li>
+            <li><a href="">tester</a></li>
+            <li><a href="">influencer</a></li>
+        </ul>
+    </li>
+        <li><a href="">contact us</a></li>
+        <li><a href="">  <i class="fa-solid fa-cart-shopping"></i>
+        </a></li>
+        <li><a href="">   <i class="fa-solid fa-magnifying-glass"></i>  
+        </a></li>
+        
+         
+     </ul>
+     
+    </nav>
+    </div>
+
+    <div class="b">
+        <div class="c">
+        <img src="shopping.webp" alt="">
+    </div>
+    <div class="d">
+    <h1 style="color: red;">
+        Sale 20% off <br><span style="color: black;">On Everything</span>
+    </h1>
+    <p>LoSunt nisi, quos odit, voluptatum perspiciatis incidunt facilis et totam enim fugit, quisquam minus alias? Porro nostrum earum exercitationem eligendi necessitatibus, voluptatibus ducimus dicta deserunt expedita accusamus.</p>
+   <button onclick="alert('Hello')" style="color: white;background-color: red;">Shop Now</button>    
+   <div class="e">
+</div><div class="f">
+</div><div class="g">
+</div>
+</div>
+   
+    </div>
+<div class="h">
+   <div class="i">
+    <h1 style="text-align: center;">Why shop with us</h1>
+   </div>
+   <div class="k">
+   <div class="j">
+    <i class="fa-solid fa-truck" style="font-size: 40px;"></i>
+    <h1>
+        Free delivery
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corrupti.</p>
+   </div> <div class="j">
+    <i class="fa-solid fa-truck" style="font-size: 40px;"></i>
+    <h1>
+        Free delivery
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corrupti.</p>
+   </div> <div class="j">
+    <i class="fa-solid fa-truck" style="font-size: 40px;"></i>
+    <h1>
+        Free delivery
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corrupti.</p>
+   </div>
+   </div>
+
+</div>
+<div class="l">
+    <div class="m">
+    <img src="shopping1.jpeg" alt="">
+</div>
+<div class="n">
+<h1 style="color: red;">
+    #New Arrivals
+</h1>
+<p>LoSunt nisi, quos odit, voluptatum perspiciatis incidunt facilis et totam enim fugit, quisquam minus alias? Porro nostrum earum exercitationem eligendi necessitatibus, voluptatibus ducimus dicta deserunt expedita accusamus.</p>
+<button onclick="alert('Hello')" style="color: white;background-color: red;">Shop Now</button>    
+</div>
+</div>
+<div class="o">
+    <div class="p">
+        <h1 style="text-align: center;">
+            Our <span style="color: red;">  Products</span>
+        </h1>
+    </div>
+    <div class="q">
+        <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>
+        <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>
+        <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>
+        <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>
+        <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>
+        <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>  <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>  <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>  <div class="r">
+            <img src="shirt.jpeg" alt="">
+            <h3>Men's shirt -  <i class="fa-solid fa-dollar-sign"></i>75</h3>
+           
+        </div>
+        </div>
+   
+
+</div>
+
+</div>
+</body>
+</html>

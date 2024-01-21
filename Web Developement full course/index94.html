@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<style>
+    .d{
+        color: red;
+    }
+</style>
+</head>
+
+<body>
+     <h1 id="a" class="a b c">
+        hello world
+    </h1>
+    <p id="b">Lorem ipsum dolor sit,<span>hello world</span> amet consectetur adipisicing elit. Nam suscipit non ex molestias, cumque praesentium illum facere. Ipsa a, commodi ut perspiciatis, dolore suscipit nulla quisquam, quibusdam architecto amet ducimus.</p>
+  <button id="c">click</button>
+  <!-- <form action="">
+    <input type="text" id="a">
+    <input type="submit" id="b">
+  </form> -->
+
+ <script>
+    //get contents-html(),text(),val()
+    // let a=$("#b").text();
+    // console.log(a)
+    //     $("#b").click(function(){
+    // var a=$("#a").val();
+    //    alert( a)
+    //     })
+    //get attribute attr()
+    $("#c").click(function(){
+
+    
+$("#a").attr("class","d")
+})
+   
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="stop()" >stop</button>
+    <script>
+        //Settimeout
+        setTimeout(function(){
+            console.log("A");
+        },2000);
+        setTimeout(function(){
+            console.log("B")
+        },3000);
+        setTimeout(function(){
+            console.log("C")
+        },4000)
+        setTimeout(test,1000)
+        function test(){
+            console.log("D")
+        }
+        //Setinterval
+        let a=  setInterval(function(){
+            console.log("Hello")
+          },2000)
+          function stop(){
+            clearInterval(a)
+          }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Math object
+      //conctants to access the properties
+        console.log(Math.E)
+       console.log(Math.PI) 
+       console.log(Math.SQRT1_2)
+       console.log(Math.SQRT2)
+       console.log(Math.LOG10E)
+       console.log(Math.LOG2E)
+       console.log(Math.LN10)
+       console.log(Math.LN2)
+       //Math object methods 
+       //1.Math.round()
+       //below .5 it will give same number but above .5 it will give upperlimit
+       let num=Math.round(4.2);
+       console.log(num);
+       //2. Math.ceil
+       // here it will give upper limit only
+       let a=Math.ceil(4.2);
+       console.log(a);
+       //3.Math.floor()
+       //if number in point it will remove number and write same number
+       let b=Math.floor(4.2);
+       console.log(b);
+       //4.Math.trunc()
+       //it will be same as floor and it will be defined in ES6 i  2015
+       let c=Math.trunc(4.9);
+       console.log(c);
+       //5.Math.sign()
+       //if the number is positive it wiil be written (1), if the number is negative then it will be written (-1) and if the number is zero then it will be give (0).
+       let d=Math.sign(-70)
+       console.log(d);
+       //6.Math.Pow
+       //Math.pow(x,y) it writtens the value of x to the power of y
+       let e=Math.pow(2,3);
+       console.log(e) 
+       //7.Math.sqrt()
+       //it will give the squareroot of the valhe
+       let f=Math.sqrt(49);
+       console.log(f);
+       //8.Math.abs()
+       //it will be written only positive value
+       let g=Math.abs(-100);
+       console.log(g);
+       //9>Max()and Min()
+       let h=Math.min(2,3,1,5,4);
+       console.log(h);
+       let i=Math.max(2,3,4,5,6,7);
+       console.log(i);
+       //10.Math.random()
+       //it will written a random number in betwwen 0 to 1
+       let j=Math.random()
+       console.log(j)
+       //eg
+       let k=Math.random()*10;
+       console.log(k)
+       //eg. to remove the point we wiil use floor
+       let l=Math.floor(Math.random()*100);
+       console.log(l)
+      //formula let num=Math.floor(Math.random()*(max-min)+min)
+      let m=Math.floor(Math.random()*(10-1)+1)
+      console.log(m)
+      //it will also witten as
+      let n=Math.floor(Math.random()*9999+1000)
+      console.log(n);
+      //by using function
+      function abc(min,max){
+        let o=Math.floor(Math.random()*(max-min)+min)
+        console.log(o)
+      }
+      abc(10,20)
+      
+    </script>
+</body>
+</html>

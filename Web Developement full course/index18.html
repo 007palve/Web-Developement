@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>
+        Documents
+    </title>
+
+    <style>
+        form{
+            background-color: rgb(5, 254, 158);
+            border: 2px solid black;
+            padding: 10px;
+            height: 400px;
+            width: 500px;
+        }
+        span{
+            color: red;
+        }
+        h1{
+            color: rgb(75, 108, 185);
+            text-align: center;
+            background-color: rgb(94, 207, 94);
+        }
+    </style>
+    </head>
+    <body>
+        <form action="form.html"> <!--Here on Backend file used in action tag-->
+            <h1>My <span>Form</span></h1>
+            <label for="a" >FirstName</label>
+            <input id="a" type="text" name="FirstName">
+            <br> <br>
+            <label  for="b">LastName</label>
+            <input  id="b"  type="text" name="LastName">
+            <br> <br>
+            <label>Gender</label>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender"  value="Female">Female
+            <input type="radio" name="Gender"  value="Other">Other
+            <br> <br>
+            <label>Hobbies</label>
+            <input type="checkbox" name="Hobbies" value="Plyaing">Plyaing
+            <input type="checkbox"  name="Hobbies" value="Coding">Coding
+            <br> <br>
+            <label>DOB</label>
+            <input type="date">
+            <br> <br>
+            <input type="submit">
+            
+            <input type="reset">
+         
+        </form>
+    </body>
+</html>

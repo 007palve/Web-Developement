@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+          //js object
+
+        let company={
+            dell:"laptop",
+            iphone:"macmob",
+            vivo:"Mobile",
+            lenovo:"laptop"
+        }
+        company.dell="mobile"
+        console.log(company);
+        //js proporties //here add,update and delete proporties are used
+        let person={
+            fname:"prathamesh",
+            lname:"palve",
+            edu:"CSE",
+            develop:" full stack developer",
+
+
+        }
+      person.devloper="Python full stack developer";
+     delete person.develop;
+        console.log(person);
+        //js object methods
+       
+        let course={
+            c1:"html",
+             c2:"css",
+            c3:"js",
+            test:function(){
+                console.log(`My fvaourite languages are ${course.c1}, ${course.c2}, ${course.c3} and my course name is ${develpoer.d1}`);
+            }
+
+          
+        }
+        let develpoer={
+            d1:"python full stack",
+            d2:"java full stack"
+        }
+        course.test();
+       //this keyword
+       let course1={
+            c1:"html",
+             c2:"css",
+            c3:"js",
+            test:function(){
+                console.log(`My fvaourite languages are ${this.c1}, ${this.c2}, ${this.c3} and my course name is ${develpoer2.d1}`);
+            }
+
+          
+        }
+        let develpoer2={
+            d1:"python full stack",
+            d2:"java full stack"
+        }
+        course.test();
+    </script>
+</body>
+</html>

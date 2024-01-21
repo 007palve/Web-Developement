@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style >
+    .owl-prev{
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    span{
+        font-size: 50px;
+        color: aqua;
+    }
+</style>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="pexels-feyza-nur-demirci-7620384.jpg" alt=""></div>
+        <div class="item"><img src="pexels-gautham-krishnan-12601624.jpg" alt=""></div>
+        <div class="item"><img src="pngwing.com (3).png" alt=""></div>
+        <div class="item"><img src="pexels-kaan-can-18192207.jpg" alt=""></div>
+        <div class="item"><img src="pexels-lanyjade-mondou-18312410.jpg" alt=""></div>
+        <div class="item"><img src="pexels-kassandre-pedro-12010319.jpg" alt=""></div>
+        <div class="item"><img src="pexels-ngân-dương-18285170.jpg" alt=""></div>
+        <div class="item"><img src="pexels-suho-media-18357613.jpg" alt=""></div>
+        <div class="item"><img src="pexels-vladimir-gladkov-15119227.jpg" alt=""></div>
+        <div class="item"><img src="pngegg.png" alt=""></div>
+        <div class="item"><img src="natinal park.jpeg" alt=""></div>
+        <div class="item"><img src="pexels-feyza-nur-demirci-7620384.jpg" alt=""></div>
+    </div>
+    <script>
+       var owl = $('.owl-carousel');
+owl.owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },            
+        960:{
+            items:5
+        },
+        1200:{
+            items:6
+        }
+    }
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+    </script>
+</body>
+</html>

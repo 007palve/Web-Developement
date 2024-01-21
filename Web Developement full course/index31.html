@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100%;
+            height: 750px;
+            position: relative;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .child{
+            height: 40%;
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 10px 20px 30px aqua;
+            border: 10px solid white;
+            border-radius: 20px;
+ 
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="earth.jpg" alt="">
+    </div>
+    <div class="child">
+        <form action="" style="margin-left: 200px;">
+            <label for="a">FirstName</label>
+            <input id="a" type="text">
+            <label for="b">LastName</label>
+            <input id="b" type="text">
+            <br>
+            <label for="c">Email</label>
+            <input id="c" type="email">
+            <label for="d">DOB</label>
+            <input id="d" type="date">
+            <br>
+            <label for="e" style="vertical-align: top;">Details</label>
+            <textarea name="" id="e" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" style="margin-left: 130px;">
+        </form>
+    </div>
+</body>
+</html>

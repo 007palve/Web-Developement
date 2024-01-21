@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // for of loop for array
+    let arr=["html","css","js"];
+    console.log(arr);
+    // console.log(arr[0])
+    // console.log(arr[1])
+
+    // console.log(arr[2])
+    for(let a of arr){
+        console.log(a)
+    }
+    //for in loop for object
+    let person={
+        fname:"html",
+        lname:"css",
+        duration:"3 months",
+        course:"full stack"
+            }
+            console.log(person);
+            // console.log(person.fname + person.lname)
+            for(let b in person){
+                console.log(b+ ":" +person[b])
+            }
+            
+       //switch statement
+       let day=7;
+       switch(day){
+        case 1:
+            console.log("mon");
+            break;
+            case 2:
+                console.log("tues")
+                break;
+                case 3:
+                    console.log("wed")
+                    break;
+                    case 4:
+                        console.log("thur")
+                        break;
+                        case 5:
+                            console.log("frid")
+                            break;
+                            case 6:
+                                console.log("sat")
+                                break;
+                                case 7:
+                                    console.log("sun");
+                                    break;
+                                    default:
+                                        console.log("please enter valid number")
+                                        break;
+
+       }     
+</script>
+</body>
+</html>

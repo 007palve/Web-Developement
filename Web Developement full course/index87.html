@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<style>
+    div{
+        background-color: grey;
+    }
+</style>
+</head>
+
+<body>
+    <div id="a">
+        <h1>hello</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad facilis voluptas deserunt. Voluptas dolore suscipit inventore qui nihil! Placeat perferendis maiores ipsa sapiente vero voluptates error vel fugit eum optio!</p>
+    
+    </div>
+    <button id="b">hide</button>
+    <button id="c">show</button>
+    <button id="d">toggle</button>
+    <script>
+        //jQuery Effects
+        $("#b").click(function(){
+            $("#a").hide(3000,function(){
+                alert("Hide runned")
+            })
+        })
+        $('#c').click(function(){
+            $("#a").show(3000,function(){
+                alert("show")
+            })
+        })
+        $("#d").click(function(){
+            $("#a").toggle(3000)
+        })
+    </script>
+ 
+</body>
+</html>

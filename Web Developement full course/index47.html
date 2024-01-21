@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-image: linear-gradient(orange,wheat,green);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: -1000px;
+            font-size: 200px;
+            animation-name: test;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            display: inline-block;
+            
+        }
+        @keyframes test {
+            100%{
+                background-position: 0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>hello world</h1>
+    </div>
+</body>
+</html>

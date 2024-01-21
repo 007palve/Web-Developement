@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .a{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .c a{
+            text-decoration: none;
+            color: black;
+        }
+        .c li{
+            list-style-type: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: flex;
+
+        }
+        .c {
+            display: flex;
+            /* position: relative; */
+        }
+        .d{
+            width: 100%;
+            height: 400px;
+            background-image: url(ice.jpeg);
+            background-size: 100% 400px;
+            position: relative;
+            
+        }
+        .e{
+            background-color: rgba(255, 0, 0, 0);
+            width: 30%;
+            height: 200px;
+            position: absolute;
+            top: 150px;
+            left: 40%;
+            text-align: center;
+        }
+        .f{
+            width: 100%;
+            height: 300px;
+display: flex;
+justify-content: space-around;
+border: 2px solid black;
+        }
+        .g{
+            width: 30%;
+            height: 250px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .h{
+            width: 100%;
+            height: 450px;
+        }
+        .h h1{
+            position: relative;
+            text-align: center;
+        }
+        .h h1::after{
+            content: "";
+            background-color: aqua;
+            width: 300px;
+            height: 5px;
+            position: absolute;
+            top: 100%;
+            left: 40%;
+        }
+        .i{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .j{
+            width: 20%;
+            height: 300px;
+            text-align: center;
+            
+        }
+        .j h1{
+            position: relative
+        }
+        .j h1::after{
+            content: "";
+            background-color: aqua;
+            width: 100px;
+            height: 5px;
+     position: absolute;
+     top: 100%;
+     left: 30%;
+        }
+        .k{
+            width: 20%;
+            height: 300px;
+            background-image: url("pexels-efrem-efre-18271867.jpg");
+            background-size: 100% 300px;
+        }
+        .l{
+            text-align: center;
+            width: 100%;
+            height: 200px;
+        }
+        .l h1{
+            position: relative;
+        }
+        .l h1::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 40%;
+            background-color: aqua;
+            width: 300px;
+            height: 5px;
+        }
+        .m{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+        }
+        label{
+            display: none;
+        }
+        input{
+            display: none;
+        }
+        @media (max-width:600px) {
+              
+      .c{
+        display: none;
+      }
+       label {
+            display: block;
+        }
+        input:checked ~ .c{
+    display: block;
+    position: absolute;
+    top: 50px;
+   
+    right: 0;
+
+}
+       .e h1{
+        font-size: 25px;
+       }
+       .f{
+        flex-direction: column;
+        height: auto;
+    
+       }
+       .g{
+              
+        width: 100%;
+       }
+       .h{
+        height: auto;
+       }
+       .h h1::after{
+            content: "";
+            background-color: aqua;
+            width: 300px;
+            height: 5px;
+            position: absolute;
+            top: 100%;
+            left: 22%;
+        }
+        .i{
+            flex-direction: column;
+            height: auto;
+        }
+        .j{
+            width: 100%;
+        }
+        .k{
+            width: 100%;
+        } .j h1::after{
+            content: "";
+            background-color: aqua;
+            width: 100px;
+            height: 5px;
+     position: absolute;
+     top: 100%;
+     left: 40%;
+        }
+        .l{
+            height: auto;
+        }
+        .l h1::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 25%;
+            background-color: aqua;
+            width: 300px;
+            height: 5px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+   <div class="b">       <h1>simply</h1>
+    </div>
+   
+        <ul> 
+           
+                <input type="checkbox" id="same">
+            <label for="same" ><i class="fa-solid fa-bars"></i></label>
+            <div class="c">
+            <li><a href="">Home </a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact us</a></li>
+        </div>
+        </ul>
+    
+    </div>
+    <div class="d">
+       
+    </div>
+    <div class="e">
+        <h1>A MINIMAL CLEAN</h1>
+        <h1>LAYOUT FOR WEB DESIGN</h1>
+        <button onclick="alert('Hello')">Get started</button>
+    </div>
+    <div class="f">
+      <div class="g">
+        <i class="fa-solid fa-sun" style="font-size: 35px;"></i>
+        <h2>Easy to Edit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem labore recusandae! Odio, quam reprehenderit ipsa doloribus aliquam a autem, ipsum obcaecati dolorum cumque nulla debitis. Possimus itaque quidem repellendus.</p>
+      </div>
+      <div class="g">
+        <i class="fa-solid fa-sun" style="font-size: 35px;"></i>
+        <h2>Easy to Edit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem labore recusandae! Odio, quam reprehenderit ipsa doloribus aliquam a autem, ipsum obcaecati dolorum cumque nulla debitis. Possimus itaque quidem repellendus.</p>
+      </div><div class="g">
+        <i class="fa-solid fa-sun" style="font-size: 35px;"></i>
+        <h2>Easy to Edit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem labore recusandae! Odio, quam reprehenderit ipsa doloribus aliquam a autem, ipsum obcaecati dolorum cumque nulla debitis. Possimus itaque quidem repellendus.</p>
+      </div>
+    </div>
+    <div class="h">
+        <h1> FEATURE CONTENT</h1>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet mollitia magni aperiam fugiat rerum ad impedit tempore ipsum, molestiae, nemo veniam possimus? Tempore voluptatum dolorum optio ipsum, repudiandae inventore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime exercitationem omnis, eaque laborum est dicta nobis aliquam quibusdam repudiandae deserunt odio tempore hic voluptatibus qui sed pariatur tempora quas numquam!</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/zFiqZMTmolY?si=tWzaPGyDM9PXBaoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="i">
+        <div class="j">
+            <h1>Secondary <br>content</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati saepe, sequi aut, ipsam sapiente aliquam blanditiis fugiat incidunt deserunt perferendis beatae tempora nemo labore totam inventore facilis molestias impedit facere!</p>
+            <button onclick="alert('hello')">Read More</button>
+        </div>
+        <div class="k">
+            
+        </div>
+        <div class="j">
+            <h1>Secondary <br>content</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati saepe, sequi aut, ipsam sapiente aliquam blanditiis fugiat incidunt deserunt perferendis beatae tempora nemo labore totam inventore facilis molestias impedit facere!</p>
+            <button onclick="alert('hello')">Read More</button>
+        </div>
+        <div class="k">
+            
+        </div>
+    </div>
+    <div class="l">
+        <h1>HEARD ENOUGH</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eos exercitationem. Harum temporibus ex ducimus quos reprehenderit nostrum dolorem ipsum veritatis quibusdam. Quasi placeat similique quia ad. Voluptatum deserunt excepturi voluptatibus sunt, nulla ipsa delectus minima culpa tenetur iure consequuntur hic fuga sapiente illum explicabo saepe asperiores, adipisci, quas consectetur eum sed? Quas nihil eveniet reiciendis rem laborum ratione magni. Unde natus impedit, cupiditate sint eos harum, alias accusamus reprehenderit molestiae adipisci quidem doloribus nam neque ut iure aspernatur, ea consequuntur velit. Quaerat, alias eligendi? Quas laboriosam eveniet deserunt labore sunt consectetur! Aperiam vitae velit necessitatibus eligendi praesentium illo cupiditate.</p>
+        <button onclick="alert('hello')" style="background-color:  aqua;">Get Started</button>
+    </div>
+    <div class="m">
+        <div class="n">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorum?</p>
+        <a href="" style="color: aqua;">Terms of services and privacy</a>
+</div>
+<div class="n">
+
+    <ul style="list-style-type: none;">
+        <li style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">COMPANY</li>
+        <li>about us</li>
+        <li>services</li>
+        <li>contact us</li>
+        <li>help</li>
+    </ul>
+</div>
+<div class="n">
+
+    <ul style="list-style-type: none;">
+        <li style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">COMPANY</li>
+        <li>about us</li>
+        <li>services</li>
+        <li>contact us</li>
+        <li>help</li>
+    </ul>
+</div>
+    </div>
+</body>
+</html>

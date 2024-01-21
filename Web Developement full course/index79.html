@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 100%;
+            height: 500px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .text{
+            color: wheat;
+            position: relative;
+        }
+        .typed-cursor{
+            color: red;
+        }
+        /* .c::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            border-left: 2px solid blue;
+            top: 0;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move {
+            50%{
+                left: 100%;
+            }
+            100%{
+                left: 0;
+            }
+            
+        } */
+    </style>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div class="a">
+        <span class="text b">I'm &nbsp; </span>
+        <span class="text c"></span>
+
+    </div>
+    <script>
+var typed = new Typed('.c', {
+      strings: ['<span style="color:red">Developer</span>', '<span style="color:aqua">Designer</span>','<span style="color:blue">Freelancer</span>'],
+      typeSpeed: 200,startDelay: 100, backSpeed: 100,
+
+      loop:true,showCursor: true,
+
+    });
+
+
+
+
+
+
+
+
+
+    //   let a=  document.querySelector(".c");
+    //   function test(){
+
+      
+    //     setTimeout(function(){
+    //       a.textContent="Developer"
+    //       a.style.color="red";
+    //     },0);
+    //     setTimeout(function(){
+    //         a.textContent="Designer"
+    //         a.style.color="aqua";
+
+    //     },4000)
+    //     setTimeout(function(){
+    //         a.textContent="freelancer"
+    //         a.style.color="green";
+
+    //     },8000)
+    // }
+    // setInterval(test,12000)
+   
+    </script>
+</body>
+</html>

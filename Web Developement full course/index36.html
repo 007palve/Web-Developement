@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 700px;
+            width: 100%;
+            background-image: url(123.jpeg);
+            background-size: 100% 700px;
+            position: relative;
+        }
+        h1{
+            color: rgb(43, 255, 0);
+            text-shadow: 2px 3px 4px red;
+            position: absolute;
+            top: 50%;
+            font-size: 50px;
+
+        }
+        h1:hover{
+            color: yellowgreen;
+            border: 2px solid wheat;
+        }
+       div form{
+        height: 300px;
+        width: 20%;
+        background-color: rgba(0, 255, 229, 0.5);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+       }
+       div form:hover{
+background-color: red;
+border: 5px solid blue;
+border-radius: 20px;
+       }
+       div input:hover{
+        background-color: yellow;
+        border: 4px solid blueviolet;
+       }
+    </style>
+</head>
+<body>
+    S
+    <div class="parent"></div>
+    <h1>Welcome to Our Site</h1>
+    <div>
+        <form action="">
+            <span style="margin-left: 90px;">Feedback <span style="color: red;">Form</span></span>
+            <br><br>
+            <label for="a">FirstName</label>
+            <input id="a" type="text" placeholder="Enter your first name">
+            <br><br>
+            <label for="b">LastName</label>
+            <input id="b" type="text" placeholder="Enter your last name">
+            <br><br>
+            <label for="c">Your Age</label>
+            <input id="c" type="text" placeholder="Enter your Age">
+            <br><br>
+            <label for="d">Enter your Email</label>
+            <input id="d" type="email" placeholder="Ente ryour email">
+            <br><br>
+            <label for="">Gender</label>
+            <input type="radio" name="g" value="male">Male
+            <input type="radio" name="g" value="female">female
+            <input type="radio" name="g" value="other">other
+            <br><br>
+            <label for="">Skills</label>
+            <input type="checkbox">html
+            <input type="checkbox">css
+
+            <input type="checkbox">js
+            <br><br>
+            <input type="submit" style="margin-left: 100px;">            
+        </form>
+    </div>
+</body>
+</html>

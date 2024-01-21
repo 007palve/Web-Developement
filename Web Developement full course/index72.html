@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Date object
+        let a=new Date()
+        console.log(a);
+        //Date object get methods
+        let b=new Date(2003,5,11,2,15,1)
+        console.log(b.getFullYear());
+        console.log(b.getDate());
+        console.log(b.getMonth())
+        console.log(b.getHours())
+        console.log(b.getMinutes());
+        console.log(b.getMilliseconds())
+        console.log(b.getSeconds())
+        console.log(b.getTime())
+        //Date object Set methods
+        let c=new Date(2004,9,28,7,12,2);
+        var d=c.setDate(11);
+        var d=c.setMonth(4);
+        var d=c.setFullYear(2003);
+        var d=c.setHours(2);
+        var d=c.setMinutes(15);
+    var d=c.setSeconds(1);
+        // var d=c.setTime(11);
+        console.log(c)
+    </script>
+</body>
+</html>

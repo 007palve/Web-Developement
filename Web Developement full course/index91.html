@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+  
+    <input type="text" id="email">
+    <br><br>
+    <input type="password" id="pass"><span id="btn">show</span>
+    <br><br>
+    <input type="submit" id="subbtn">
+    <script>
+           $("#subbtn").click(function(){
+        var email="abc@gmail.com" ;
+           var pass="abc@gmail.com";
+           var useremail=document.getElementById("email").value    
+           var userpass=document.getElementById("pass").value    
+     
+            if(email==useremail && pass==userpass){
+                swal({                                  //sweet heart js library
+  title: "login successfully",
+  text: "You clicked the button!",
+  icon: "success",
+});
+            }
+            else{
+                swal({
+  title: "login failed",
+  text: "You clicked the button!",
+  icon: "error",
+});
+            }
+                   
+        })
+var pass= document.getElementById("pass");
+$("#btn").click(function(){
+    if(pass.type=="password"){
+        pass.type="text";
+    }
+    else{
+        pass.type="password"
+    }
+})
+
+    </script>
+</body>
+</html>

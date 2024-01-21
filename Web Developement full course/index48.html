@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            border-bottom: 10px solid aqua;
+              
+        }
+        li{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: yellow;
+            list-style: none;
+           margin: 20px;
+            animation-name: test;
+            animation-iteration-count: infinite;
+           animation-duration: 1s;
+        }
+        @keyframes test{
+            100%{
+                transform: translatey(-200px);
+            }
+            
+        }
+        .a{
+            background-color: rgb(119, 255, 0);
+            animation-delay: 0.8s;
+        }
+        .b{
+            background-color: green;
+            animation-delay: 0.5;
+
+        }
+        .c{
+            background-color: palevioletred;
+            animation-delay: 0.3s;
+
+        }
+        .d{
+            background-color: orangered;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="a"></li>
+            <li class="b"></li>
+            <li class="c"></li>
+            <li class="d"></li>
+
+        </ul>
+    </div>
+</body>
+</html>

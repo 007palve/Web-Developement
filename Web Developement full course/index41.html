@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 300px;
+            width: 30%;
+            position: relative;
+            margin: 200px;
+            perspective: 500px;
+        }
+        .a{
+            height: 300px;
+            width: 100%;
+            transform: rotatey(0);
+            transition: all 5s;
+        }
+        .a:hover{
+            transform: rotatey(-90deg);
+        }
+        .a img{
+            height: 300px;
+            width: 100%;
+
+        }
+        .b{
+          height: 300px;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: wheat;
+          position: absolute;
+          top: 0;
+          transform: rotatey(90deg);
+          transition: all 5s;
+        }
+        .parent:hover .b{
+         transform: rotatey(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a">
+            <img src="garden.webp" alt="">
+
+        </div>
+        <div class="b">
+            <h1 style="text-align: center;">GARDENING</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem error exercitationem ex. Quod nesciunt nobis distinctio! Quisquam in eos ipsa voluptatum molestiae. Culpa, nobis tenetur facere atque velit suscipit officia modi perferendis dicta, delectus voluptas iste, officiis quisquam explicabo vero. Maiores quam repudiandae vitae reprehenderit perspiciatis corporis odio sequi!</p>
+        </div>
+    </div>
+</body>
+</html>

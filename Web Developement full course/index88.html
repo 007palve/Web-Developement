@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Document</title>
+    <style>
+        div{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div id="ab">
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nulla officiis quae nemo iste, iusto accusantium, unde perferendis quam doloremque ratione error, modi labore ut facilis quisquam dolorum. Id, perferendis.</p>
+</div>
+<button id="a">fadeout</button>
+<button id="b">fadeIn</button>
+<button id="c">fadetoggle</button>
+<button id="d">fadeto</button>
+<script >
+    //jquer effects-fade
+    $("#a").click(function(){
+        $("#ab").fadeOut(3000)
+    })
+    $("#b").click(function(){
+        $("#ab").fadeIn(2000)
+    })
+    $("#c").click(function(){
+        $("#ab").fadeToggle(2000)
+    })
+  $("#d").click(function(){
+    $("#ab").fadeTo(2000,0.5)
+  })
+
+</script>
+
+</body>
+</html>

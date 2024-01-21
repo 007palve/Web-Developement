@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("#a").click(function(){
+        //         $(this).css("color","pink")
+
+        //     })            
+        // })
+    </script>
+</head>
+<body>
+    <h1 id="abc">Html</h1>
+    <h1 id="ab">css</h1>
+  <h1 id="a">Hello </h1>
+  <h2 class="b">Hello</h2>
+  <h3>Hello</h3>
+  <h4 class="c"> hello</h4>
+  <button id="btn">click here</button>
+  <form action="">
+    <input type="text" id="d">
+  </form>
+  <script>
+
+$("#a").css("color","red"); //id selector
+$("h2.b").css("color","blue");//class selector
+$("h3").css("color","aqua");//element selector
+$("#btn").click(function(){  //click
+   $("#a").css("color","yellow")
+})
+$(".b").click(function(){
+    $(this).css("color","green");
+})
+$("h3").dblclick(function(){
+    $(this).css("color","yellow");  //dblclick
+})
+$(".b").mouseenter(function(){
+    $(this).css("color","violet") //mouseenter
+})
+$("h3").mouseleave(function(){
+    $(this).css("color","blue") //mouseleave
+})
+$(".c").hover(function(){   //hover-combinatiion of mouseenter and mouseleave
+    $(this).css({"color":"red","backgroundColor":"black","text-align":"center"})
+},
+function(){
+    $(this).css("color","blue")
+})
+ $("#d").focus(function(){             //focus
+    $(this).css({"backgroundColor":"black"})
+ })
+ $("#d").blur(function(){             //blur
+    $(this).css({"backgroundColor":"green"})
+ })
+
+ $("#abc").on({  //on
+    click:function(){
+        $("#abc").css("color","red")
+    },
+    dblclick:function(){
+      $("#abc").css("color","green")
+    },
+    mouseenter:function(){
+      $("#abc").css("color","yellow")
+    }
+ })
+ $(window).keyup(function(){  //keydown,keypress,keydown
+    $("#ab").css("color","green");
+ })
+window.addEventListener('keydown',test)
+function test(e){
+    console.log(e.key
+    )
+}
+  </script>  
+</body>
+    
+
+</html>

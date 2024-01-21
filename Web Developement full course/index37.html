@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .parent{
+            height: 300px;
+            width: 30%;
+            position: relative;
+            margin-left: 40%;
+            margin-top: 20%;
+            overflow: hidden;
+        }
+        .parent img{
+         height: 100%;
+         width: 100%;            
+        }
+        .a{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(51, 210, 207, 0.5);
+            position: absolute;
+            top: 0;
+            left: -100%;
+            color: rgb(0, 0, 0);
+            transition: all 2s;
+        }
+        .parent:hover .a{
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="123.jpeg" alt="">
+        <div class="a">
+            <h1>Laptop</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos exercitationem praesentium neque distinctio quia minima quae dolorum officia in veniam voluptatibus inventore, voluptas sit voluptate dolorem vitae libero id illo ipsa atque debitis aut pariatur autem? Doloribus adipisci dolor optio nisi quo officiis. Animi reiciendis, optio non ipsum libero ad.</p>
+        </div>
+    </div>
+</body>
+</html>

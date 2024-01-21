@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    img{
+        width: 33%;
+        height: 300px;
+    }
+h1{
+    position: relative;
+}
+    h1::after{
+        content: "";
+        width: 150px;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+        left: 45%;
+        border-radius: 20px;
+
+        }
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">Our <span style="color: red;">Gallery</span></h1>
+    <div class="parent-container">
+        <a href="path-to-image-1.jpg"><img src="pexels-efrem-efre-18271867.jpg" alt=""></a>
+        <a href="path-to-image-2.jpg"><img src="pexels-feyza-nur-demirci-7620384.jpg" alt=""></a>
+        <a href="path-to-image-3.jpg"><img src="pexels-gautham-krishnan-12601624.jpg" alt=""></a>
+        <a href="path-to-image-3.jpg"><img src="pexels-kaan-can-18192207.jpg" alt=""></a>
+        <a href="path-to-image-3.jpg"><img src="html1234.gif" alt=""></a>
+        <a href="path-to-image-3.jpg"><img src="pexels-lanyjade-mondou-18312410.jpg" alt=""></a>
+      </div>
+      <script>
+$('.parent-container').magnificPopup({
+  delegate: 'a', 
+  type: 'image',
+  gallery: {
+  
+    enabled: true
+  },
+  image: {
+    
+    titleSrc: 'title'
+  }
+
+});
+  
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //to conver json object to json string we will use stringify
+        let person={
+            "name":"html",
+            age:21
+
+        }
+   
+        
+        // console.log(JSON.stringify(person));
+        //to convert json string to json object we will use parse 
+      //eg.1
+//         const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+//         console.log(obj);
+//eg.2
+//         const text = '["Ford", "BMW", "Audi", "Fiat"]';
+// const myArr = JSON.parse(text);
+// console.log(myArr);
+//eg.
+let a=('{"name":"css","age":20}');
+let b=JSON.parse(a);
+console.log(b)
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .b{
+            display: flex;
+            list-style-type: none;
+            
+        }
+        a{
+color: wheat;        
+            text-decoration: none;
+        }
+        li{
+padding: 10px 20px;    
+
+        }
+        .services{
+            position: relative;
+        }
+        .dropdown{
+            position: absolute;
+            top: 30px;background-color: black;
+            display: none;
+        }
+        .services:hover .dropdown{
+            display: block;
+        }
+        input{
+            display: none;
+        }
+        label{
+            display: none;
+        }
+@media (max-width:600px){
+ 
+    .b{
+        display: none; 
+
+    }
+    label{
+        display: block;
+    }
+input:checked ~ .b{
+    display: block;
+    position: absolute;
+    top: 30px;
+    background-color: black;
+    left: 0;
+
+}
+
+.dropdown{
+    left: 60%;
+}
+}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a">
+            <h1>Responsive</h1>
+        </div>
+        <ul>    
+                    <input type="checkbox" id="same">
+            <label for="same"><i class="fa-solid fa-bars"></i></label>
+            <div class="b">
+
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li class="services"><a href="">Services</a>
+            <ul class="dropdown">
+                <li><a href="">designer</a></li>
+                <li><a href="">developer</a></li>
+                <li><a href="">tester</a></li>
+                <li><a href="">influencer</a></li>
+            </ul></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Contact us</a></li>
+     </div>
+        </ul>
+    </div>
+</body>
+</html>

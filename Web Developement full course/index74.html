@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="a">Home</li>
+        <li>about us</li>
+        <li>services</li>
+        <li>contact us</li>
+    </ul>
+
+    <div id="b">
+        <h1>Hello</h1>
+        <h2>abc</h2>
+        <h3>pqr</h3>
+    </div>
+   <script>
+    //Traversing
+    //traverse from child to parent element
+    let a=document.getElementById("a");
+    let b=a.parentElement
+    console.log(b)
+    //traverse from parent to child element
+    let c=document.getElementById("b");
+    let d=c.firstElementChild.nextElementSibling
+    console.log(d);
+    //Create element
+    let e=document.getElementById("b");
+    let f=document.createElement('h4');
+      e.appendChild(f);
+      f.textContent="hello world" //1st method
+  //2 method
+    let g=document.createTextNode("hello ja");
+    f.appendChild(g);
+    //insertBefore(element to insert,position)
+    let h=document.getElementById("b");
+    let i=h.createElement('h5');
+    h.appendChild(i)
+    i.textContent="html";
+let j=h.firstElementChild;
+h.insertBefore(h1,j)
+   </script>
+</body>
+</html>

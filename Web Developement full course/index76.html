@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseout="test()">click here</button>
+    <h1 id="a">Hello</h1>
+    <h2 id="c">world</h2>
+  <p id="b">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis itaque, saepe beatae tempora nemo quo, numquam, sequi dolorum est exercitationem porro? Porro tempora voluptatum, harum dignissimos soluta alias blanditiis, commodi velit officiis architecto molestiae quasi? Quaerat delectus sequi provident nam explicabo laboriosam! Reprehenderit cum repudiandae, totam eveniet consectetur voluptatem minima quas tempore vel alias eaque nihil dolorum ad rem a deleniti accusantium necessitatibus quibusdam voluptate, adipisci iste consequatur reiciendis, nam sequi? Corrupti officiis tenetur obcaecati dolores deleniti nesciunt consequuntur est recusandae quas rem nam libero, nemo minus veritatis in eos? Nobis optio molestias pariatur, nesciunt distinctio quidem fugit hic corrupti, accusantium possimus delectus qui cupiditate ipsum excepturi impedit. Fugit repudiandae vel assumenda exercitationem itaque, cumque natus facilis quaerat iusto laboriosam tempore ipsum atque voluptatibus odit magnam molestias voluptas explicabo error harum nihil in nemo? Tempora, quod? Repellat exercitationem laboriosam aliquid id eum, sunt quod ipsum eius neque dignissimos obcaecati tenetur animi hic maiores nam illo nisi suscipit temporibus a repellendus rerum voluptatum. Facere, ut harum voluptatum dolorum incidunt cum nihil inventore dolor fuga cupiditate perspiciatis, autem perferendis dicta nisi consequatur soluta voluptate sunt veritatis natus eius, exercitationem quas necessitatibus dolores? Ipsam ipsum illum quaerat quis necessitatibus eos sunt amet molestiae iure consectetur cum placeat, incidunt quas in corporis animi possimus unde quod nam rerum vero ea! Doloremque, corporis asperiores consequatur, tempora obcaecati iste distinctio harum perspiciatis reprehenderit tenetur sint cum aspernatur voluptate est ex libero quo architecto sequi maiores iusto ratione in. Cum corporis repellat perferendis consequuntur. Id cum nemo omnis, repellendus quod iusto quas, impedit molestias repellat mollitia atque. Ipsum, suscipit natus quaerat eaque rem rerum minima atque vero saepe, cupiditate esse error iste illum molestias temporibus, nihil optio magni aspernatur totam. Vitae veniam nisi earum. Delectus eaque at iusto cupiditate aspernatur molestias. Deleniti dolore accusamus magnam eius laudantium eaque. Soluta, suscipit ipsam ea eius numquam maxime in sed ullam. Officia facilis fugit, rem ipsam quisquam dignissimos voluptate saepe inventore assumenda fuga et porro ex voluptatibus commodi quod. Culpa nam fugit dolorum iste ullam. Quaerat voluptas fugit perspiciatis eveniet recusandae amet repellendus porro libero enim. Commodi perferendis impedit repellat et at. Illo doloremque ut nostrum autem mollitia dignissimos. Libero cum voluptas asperiores, eligendi aut nesciunt quis esse illo ex culpa corporis dolorem quaerat doloribus placeat ea blanditiis maxime dolorum repellendus eius nobis dignissimos architecto magni? Dicta distinctio aperiam quidem ad ea mollitia, repellat unde! Eligendi ea adipisci maxime odit voluptates soluta incidunt veritatis mollitia possimus corrupti? Iusto culpa error nam expedita minus, molestiae necessitatibus itaque veniam optio, quisquam nihil voluptatibus commodi impedit deleniti corporis adipisci earum velit ipsam fuga saepe veritatis repudiandae? A vel aliquam repellendus nostrum maiores asperiores aut similique veritatis, iusto, sunt corrupti pariatur libero porro tempora at dolor molestiae voluptate quisquam error tempore ducimus. Quia quaerat quis ex distinctio consequuntur natus. Neque ipsum maiores voluptatibus. Itaque perferendis recusandae error repellat, ratione nam est vel maiores ipsam expedita adipisci nesciunt nostrum optio. Accusamus, ex ullam! Minima perspiciatis corrupti ut sunt ea maxime nulla, blanditiis consequuntur ipsum veniam.adipisicing elit. Facere, quas? Aliquam voluptas illum cupiditate rerum! Quibusdam aperiam debitis vel iusto ea ab praesentium aspernatur, eos labore nulla facere eaque officia voluptate ex dolores dolore expedita odio magnam recusandae! Aliquam, cupiditate fuga commodi neque eaque, porro dolores nisi dolor laudantium expedita in odio impedit cum odit ipsam error est tempore ratione dolorum architecto earum natus saepe culpa libero! Consequatur ullam enim debitis quia pariatur placeat facilis nostrum culpa at ratione nulla, beatae exercitationem excepturi et ad blanditiis architecto iste itaque, inventore quasi illum dolorem. Aliquam ea veniam quibusdam temporibus, magni sed nemo nesciunt sapiente tempore a quis nihil laboriosam omnis modi deleniti itaque, distinctio, ratione quod quae at numquam cum quidem! Suscipit asperiores molestiae neque alias voluptas veritatis dolorum veniam nemo, eum facilis nobis quam amet quas consequuntur, doloribus cumque exercitationem explicabo incidunt? Dolorem nam repellat doloribus delectus maiores hic saepe laudantium, tempore, facilis iusto eligendi consequatur reiciendis veritatis numquam excepturi error. Veritatis magni totam possimus dolor natus molestias labore, eveniet itaque. Vitae iure ad velit modi deleniti, doloremque suscipit excepturi nulla facilis nesciunt consectetur quibusdam atque asperiores totam blanditiis voluptas ratione, cum aperiam? Inventore architecto vero amet, tempore provident debitis!</p>
+    <script>
+      //DOM Evenets 
+      //1.Mouse events
+      function test(){
+        console.log("click successfully")
+      }
+      let a=document.getElementById("a");
+      a.addEventListener('click',test1);
+      a.addEventListener('dblclick',test2)
+      function test1(){
+        a.style.color="red";
+        a.innerHTML="bye"
+     
+      }
+      function test2(){
+        a.style.color="aqua";
+      a.innerHTML="see you again"
+      }
+      //2.keypressevents
+      let c=document.getElementById("b");
+      window.addEventListener('keypress',test3);
+      function test3(e){
+        c.style.color="yellow"
+      }
+      console.log(e.key);
+      //3.scroll
+      let d=document.getElementById("c");
+      window.addEventListener('scroll',test4);
+      function test4(){
+      
+        d.style.color="red";
+      }
+
+    </script>
+</body>
+</html>

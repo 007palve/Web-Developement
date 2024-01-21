@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.Arrow function
+        // const add= (c,d)=>{
+        //     return c*d
+
+        // }
+        // let sum=add(7,8)
+        // console.log(sum);
+        // //eg.
+        // const a=(a,b,d,e)=>{
+        //     return a+b+d*e;
+
+        // }
+        // let b=a(1,2,3,4);
+        // console.log(b)
+      //2.spread operator (it is used in array as well as object. it is write with... )
+      //for array
+    //   let a=['html','css'];
+    //   let b=[...a,'js','react'];
+    //   console.log(b)
+    //for object
+    // let a={
+    //     c1:'hrml',
+    //     c2:'css',
+        
+    // } 
+    // let c={
+    //     c5:'python',
+    //     c6:'sql'
+
+    // }
+    // let b={
+    //     ...a,
+    //     c3:'js',
+    //     c4:'reactjs',
+    //     ...c,
+    // }
+   
+    // console.log(b)
+    
+
+
+//REST opertor (...) (it is used in only function parameters)
+function test(...num){
+    let sum=0;
+    for(let i=0;i<num.length;i++){
+        sum=sum+num[i]
+    }
+console.log(sum)
+    
+}
+test(1,2,3,4)
+
+
+    //array and object destruring(it is also used in array and object for array we are using random variables and objects we are using already defined properties 
+   
+    // array destructuring
+//     let a=['html','css','js','react']
+//  let[p,b,c,d]=a;
+//  console.log(p,b,c,d) 
+    //for object
+    // let b={
+    //     p:'html',
+    //     q:'css',
+    //     r:'js',
+    //     s:'react'
+      
+    // }
+    //object destruturing
+    // let {p,q,r,s}=b;
+    // console.log(`my first name is ${p}`)
+    //Array destructuring
+    
+
+    </script>
+</body>
+</html>

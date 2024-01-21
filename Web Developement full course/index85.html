@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: center;
+            background-color: black;
+            gap: 20px;
+            overflow: hidden;
+            
+        }
+        .a{
+           width: 400px;
+           height: 250px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <script>
+        ScrollReveal().reveal('.a', { delay: 500,interval:600, reset:true, distance:'50px',origin:'top',scale:0.5,opacity:5});
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            border: 10px solid yellow ;
+            
+        }
+        
+        legend{
+            color: rgb(0, 0, 0);
+
+        }
+        .c{
+            background-color: rgb(0, 128, 122);
+        }
+        .a{
+            background-color: rgb(117, 11, 223);
+        }
+        .b{
+            background-color: rgb(64, 255, 0);
+        }
+        .d{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset class="a">
+            <legend >Your Face</legend>
+            Your Image <input type="file" multiple>
+
+        </fieldset >
+        <fieldset class=" c" ><legend>Your General Details</legend>
+        <label for="a">Name</label>
+        <input id="a" type="text">
+        <br><br>
+        <label for="">Gender</label>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="female">female
+        <input type="radio" name="Gender" value="other">other
+        <br><br>
+        <label for="b">Age</label>
+        <input id="b" type="text" size="20" maxlength="3">
+        <br><br>
+        <label for="c">date of birth</label>
+        <input id="c" type="date">
+        <br><br>
+        <label for="d">Favourite color</label>
+        <input id="d" type="color">
+        <br><br>
+        <label for="e">which country</label>
+        <input id="e" type="text">
+
+        </fieldset>
+        <fieldset class="b">
+            <legend>Your Indicators</legend>
+            <label for=""> Height</label>
+            
+            short<input type="range">tall
+            <br><br>
+            <label for=""> salary</label>
+
+            poor <input type="range">strong
+        </fieldset>
+    <fieldset class="d">
+        <legend> contact information</legend>
+        <label for="h">E-mail</label>
+        <input id="h" type="email">
+        <br><br>
+        <label for="f">Mobile number</label>
+        <input id="f" type="tel">
+        <br><br>
+        <label for="g">Address</label>
+    <textarea name="" id="g" cols="30" rows="10" style="vertical-align: top"></textarea>
+
+    </fieldset>
+    </form>
+</body>
+</html>

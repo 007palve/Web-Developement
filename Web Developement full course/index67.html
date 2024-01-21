@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String length
+        let a="Hello world";
+        console.log(a.length);
+        //Escape charachter
+      let b="hello\"s world"
+      console.log(b);
+      //method of js strings
+      //1.slice()
+      let c="hello world";
+      console.log(c.slice(6,11));
+      console.log(c.slice(-10,-3)) //here we are taking(start,end)
+      //2.substring()
+      let d="hello world";
+      console.log(d.substring(6,11));
+      console.log(d.substring(-10,-3)) // in substring we cannot use minus lengths
+      //3.substr
+      let e="hello world";
+      console.log(e.substr(0,5)); //here we are taking(start,length)
+    //4.Replace()
+    let f="hello world";
+    console.log(f.replace("hello","html"));
+    //5.ReplaceAll()
+    let g="hello world hello";
+    console.log(g.replaceAll("hello","html"));
+    //6. touppperCase()
+    let h="hello world";
+    console.log(h.toUpperCase());
+    //7. toLowerCase
+    let i='HELLO world'
+    console.log(i.toLowerCase())
+    //8. concat
+    let j="hello world";
+    let k=" html";
+    let l=" css";
+    console.log(j.concat(k,l));
+    //9.trim()
+    let m="hello     world";
+    console.log(m.trim());
+    //10.CharAt()
+    let n="hello world";
+    console.log(n.charAt(7));
+    //11.CharCodeAt()
+    let o="hello world";
+    console.log(o.charCodeAt(4)); //ASCII table values are shown
+    //12. to conver string to array we are using split()
+    let p='hello world';
+    console.log(p.split(" "));
+    //13. seracher methos in string 
+    //a.IndexOf()
+    let q="hello world";
+    console.log(q.indexOf("d"));
+    //b.lastindexof
+    let r="hello world";
+    console.log(r.lastIndexOf("w"));
+    //14.Search()
+    let s="hello world";
+    console.log(s.search("hello"));
+    //15.Startswith
+    let t="hello world";
+    console.log(t.startsWith("hello"));
+    //16. endswith
+    let u="hello world"
+    console.log(u.endsWith("world"));
+    //17. we know abour interpolation that method is called as template literals in js
+       let v=10;
+       let w=12;
+       let x=v+w;
+       console.log(`${v} + ${w}=${x}`)
+    </script>
+</body>
+</html>
