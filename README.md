@@ -11,5 +11,5 @@ Cascading Style Sheets (CSS) is a stylesheet language used to describe the prese
 # Javascript
 JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS. Many browsers use JavaScript as a scripting language for doing dynamic things on the web. Any time you see a click-to-show dropdown menu, extra content added to a page, and dynamically changing element colors on a page, to name a few features, you're seeing the effects of JavaScript.
 
- 3 JQuery
+# JQuery
 Query is an open-sourced JavaScript library that simplifies creation and navigation of web applications. Specifically, jQuery simplifies HTML Document Object Model (DOM) manipulation, Asynchronous JavaScript and XML (Ajax) and event handling. Additionally, jQuery incorporates JavaScript functionalities by manipulating CSS properties to add effects such as fade-ins and outs for website elements. jQuery is a widely used JavaScript library and is supported by thousands of user-created plug-ins.
